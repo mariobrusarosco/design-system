@@ -5,19 +5,22 @@ import dts from "vite-plugin-dts";
 export default defineConfig({
   plugins: [
     dts({
-      insertTypesEntry: true,
+      // insertTypesEntry: true,
+      // rollupTypes: true,
+      // copyDtsFiles: true,
     }),
   ],
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
       name: "Design System",
+      formats: ["es"],
       // the proper extensions will be added
       fileName: "design-system",
     },
     rollupOptions: {
       // External packages that should not be bundled into your library.
-      external: ["react", "react-dom", "react/jsx-runtime"],
+      // external: ["react", "react-dom", "react/jsx-runtime"],
     },
   },
 });

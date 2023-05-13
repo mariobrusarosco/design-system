@@ -5,7 +5,7 @@ import dts from "vite-plugin-dts";
 export default defineConfig({
   plugins: [
     dts({
-      // insertTypesEntry: true,
+      insertTypesEntry: true,
       // rollupTypes: true,
       // copyDtsFiles: true,
     }),
@@ -13,7 +13,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
-      name: "Design System",
+      name: "DesignSystem",
       formats: ["es"],
       // the proper extensions will be added
       fileName: "design-system",

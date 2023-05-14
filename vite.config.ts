@@ -14,7 +14,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
       name: "DesignSystem",
-      formats: ["es"],
+      formats: ["es", "cjs"],
       // the proper extensions will be added
       fileName: "design-system",
     },

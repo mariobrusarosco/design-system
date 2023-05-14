@@ -1,7 +1,7 @@
 export const me = "mario almemida";
 
-export { myModuleOne } from "./my-module-one";
-export { myModuleTwo } from "./my-module-two";
+export * from "./module-one";
+export * from "./module-two";
 
 export default {
   internal: "internal",

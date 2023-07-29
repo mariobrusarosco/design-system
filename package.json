@@ -1,6 +1,6 @@
 {
   "name": "@mariobrusarosco/design-system",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "repository": "https://github.com/mariobrusarosco/design-system/",
   "main": "dist/design-system.cjs",
@@ -30,6 +30,10 @@
     "storybook": "^7.0.8",
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
-    "vite-plugin-dts": "^2.3.0"
+    "vite-plugin-dts": "^2.3.0",
+    "vite-tsconfig-paths": "^4.2.0"
+  },
+  "dependencies": {
+    "styled-components": "^6.0.5"
   }
 }

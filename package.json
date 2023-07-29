@@ -3,7 +3,11 @@
   "version": "1.0.5",
   "type": "module",
   "repository": "https://github.com/mariobrusarosco/design-system/",
-  "main": "dist/design-system.js",
+  "main": "dist/design-system.cjs",
+  "module": "dist/design-system.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

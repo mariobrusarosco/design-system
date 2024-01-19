@@ -1,1 +1,3 @@
-## Chromatic
+## Design System
+
+Documentation coming soon...

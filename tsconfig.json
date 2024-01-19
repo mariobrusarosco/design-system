@@ -12,9 +12,10 @@
     "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true
-    // "skipLibCheck": true
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx"
   },
   "include": ["src"],
-  // "exclude": ["src/stories"]
+  "exclude": ["src/stories"]
 }

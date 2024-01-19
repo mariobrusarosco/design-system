@@ -1,3 +1,7 @@
-alert("a1")
+import { Button } from "./one-word/button";
 
-export default {}
+alert("a1");
+
+export default {
+  Button,
+};

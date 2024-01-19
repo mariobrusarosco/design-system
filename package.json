@@ -1,6 +1,6 @@
 {
   "name": "@mariobrusarosco/design-system",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "type": "module",
   "repository": "https://github.com/mariobrusarosco/design-system/",
   "main": "dist/design-system.cjs",

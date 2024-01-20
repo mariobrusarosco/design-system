@@ -1,6 +1,6 @@
 {
   "name": "@mariobrusarosco/design-system",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "type": "module",
   "repository": "https://github.com/mariobrusarosco/design-system/",
   "main": "dist/design-system.cjs",
@@ -24,13 +24,23 @@
     "@storybook/react": "^7.0.8",
     "@storybook/react-vite": "^7.0.8",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "@types/node": "^20.11.5",
+    "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10.4.17",
     "chromatic": "^6.17.4",
+    "postcss": "^8.4.33",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.0.8",
+    "tailwindcss": "^3.4.1",
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
     "vite-plugin-dts": "^2.3.0"
+  },
+  "dependencies": {
+    "@mui/material": "^5.15.5",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.12",
+    "styled-components": "^6.1.8"
   }
 }

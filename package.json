@@ -1,6 +1,6 @@
 {
   "name": "@mariobrusarosco/design-system",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "type": "module",
   "repository": "https://github.com/mariobrusarosco/design-system/",
   "main": "dist/design-system.cjs",
@@ -41,6 +41,11 @@
   "dependencies": {
     "@mui/material": "^5.15.5",
     "@mui/styled-engine-sc": "^6.0.0-alpha.12",
-    "styled-components": "^6.1.8"
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.312.0",
+    "styled-components": "^6.1.8",
+    "tailwind-merge": "^2.2.0",
+    "tailwindcss-animate": "^1.0.7"
   }
 }

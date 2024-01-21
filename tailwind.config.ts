@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: ["class"],
   prefix: "",
   theme: {
@@ -45,6 +45,13 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "neutral-white": "#FFF",
+        "neutral-black": "#000",
+        "primary-base": "#EC185D",
+        "primary-dark": "#BB2253",
+        "base-light": "#FF6F59",
+        "secondary-base": "#254441",
+        danger: "#FF2D2D",
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -1,13 +1,15 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import { Config } from "tailwindcss";
+import tailwindAnimate from "tailwindcss-animate";
+
+export const TailwindConfig: Config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./domains/**/*.{ts,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./index.html",
   ],
-  prefix: "",
   theme: {
     container: {
       center: true,
@@ -17,6 +19,12 @@ module.exports = {
       },
     },
     extend: {
+      gridTemplateColumns: {
+        app: "minmax(auto,95px) minmax(auto,224px) 1fr",
+      },
+      dropShadow: {
+        main: "0px 5px 5px rgba(0, 0, 0, 0.25)",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -51,11 +59,22 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "neutral-white": "#FFF",
+        "neutral-black": "#000",
+        "primary-base": "#EC185D",
+        "primary-dark": "#BB2253",
+        "base-light": "#FF6F59",
+        "secondary-base": "#254441",
+        danger: "#FF2D2D",
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      boxShadow: {
+        right: "4px 0px 10px 0px rgba(135, 128, 128, 0.25);",
+        bottom: "4px 0px 10px 0px rgba(135, 128, 128, 0.25);",
       },
       keyframes: {
         "accordion-down": {
@@ -73,5 +92,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-}
+  plugins: [tailwindAnimate],
+};

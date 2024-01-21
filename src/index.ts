@@ -1,7 +1,9 @@
-import { ComponentOne } from "./tree-shaking/component-one";
-import { ComponentTwo } from "./tree-shaking/component-two";
+import { AppSidebar } from "@/one-word/components/app-sidebar";
 
-export { ComponentOne, ComponentTwo };
+export { AppSidebar };
+
+// Tailwind
+export { TailwindConfig as TailwindOneWordConfig } from "@/one-word/tailwind/config";
 
 export default {
   myTest: () => alert(90),
